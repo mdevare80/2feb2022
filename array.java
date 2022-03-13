@@ -1,18 +1,13 @@
-public class array {
-   public static void main(String args[]){
-      int temp, size;
-      int array[] = {10, 20, 25, 63, 96, 57, 33, 92, 82, 94};
-      size = array.length;
-
-      for(int i = 0; i<size; i++ ){
-         for(int j = i+1; j<size; j++){
-            if(array[i]>array[j]){
-               temp = array[i];
-               array[i] = array[j];
-               array[j] = temp;
-            }
-         }
-      }
-      System.out.println("Third largest element is:: "+array[size-1]);
-   }
-}
+public class array {  
+    public static void main(String[] args) {  
+  
+        int [] arr = new int [] {25, 11, 7, 75, 56, 823, 111, 372, 1880, 11};  
+        int max = arr[0];  
+        for (int i = 0; i < arr.length; i++) {  
+              
+           if(arr[i] > max)  
+               max = arr[i];  
+        }  
+        System.out.println("Largest element present in given array: " + max);  
+    }  
+}  
